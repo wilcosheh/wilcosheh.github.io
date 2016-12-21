@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="druid,OLAP,大数据," />
 
 
 
@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="for yun, 无处安放的思绪总得需要一个栖息地。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="云之初">
-<meta property="og:url" content="https://wilcosheh.github.io/archives/index.html">
+<meta name="description" content="初识druid，是在为公司寻觅一款产品用于某个多维大数据分析的业务场景，以支撑存量千亿，日增亿级的多维关联查询。首先了解下druid这款开源产品。
+druid是什么？druid可以看作是一个时间序列型的数据存储，用于多维度关联分析查询，可支撑千亿甚至万亿级的事件查询分析。Druid是一个开源的分析型数据存储， 用于支持事件数据之上的BI (OLAP)查询。 Druid提供低延时（实时）数据接入，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="druid: 初遇">
+<meta property="og:url" content="https://wilcosheh.github.io/2016/10/14/druid-at-the-beginning/index.html">
 <meta property="og:site_name" content="云之初">
-<meta property="og:description" content="for yun, 无处安放的思绪总得需要一个栖息地。">
+<meta property="og:description" content="初识druid，是在为公司寻觅一款产品用于某个多维大数据分析的业务场景，以支撑存量千亿，日增亿级的多维关联查询。首先了解下druid这款开源产品。
+druid是什么？druid可以看作是一个时间序列型的数据存储，用于多维度关联分析查询，可支撑千亿甚至万亿级的事件查询分析。Druid是一个开源的分析型数据存储， 用于支持事件数据之上的BI (OLAP)查询。 Druid提供低延时（实时）数据接入，">
+<meta property="og:updated_time" content="2016-10-14T07:25:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="云之初">
-<meta name="twitter:description" content="for yun, 无处安放的思绪总得需要一个栖息地。">
+<meta name="twitter:title" content="druid: 初遇">
+<meta name="twitter:description" content="初识druid，是在为公司寻觅一款产品用于某个多维大数据分析的业务场景，以支撑存量千亿，日增亿级的多维关联查询。首先了解下druid这款开源产品。
+druid是什么？druid可以看作是一个时间序列型的数据存储，用于多维度关联分析查询，可支撑千亿甚至万亿级的事件查询分析。Druid是一个开源的分析型数据存储， 用于支持事件数据之上的BI (OLAP)查询。 Druid提供低延时（实时）数据接入，">
 
 
 
@@ -113,10 +117,10 @@
 
 
 
-  <link rel="canonical" href="https://wilcosheh.github.io/archives/"/>
+  <link rel="canonical" href="https://wilcosheh.github.io/2016/10/14/druid-at-the-beginning/"/>
 
 
-  <title> 归档 | 云之初 </title>
+  <title> druid: 初遇 | 云之初 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -147,7 +151,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right  page-archive  ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -285,177 +289,224 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 4 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                druid: 初遇
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-14T15:06:27+08:00" content="2016-10-14">
+              2016-10-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/大数据/" itemprop="url" rel="index">
+                    <span itemprop="name">大数据</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/大数据/OLAP/" itemprop="url" rel="index">
+                    <span itemprop="name">OLAP</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/大数据/OLAP/druid/" itemprop="url" rel="index">
+                    <span itemprop="name">druid</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/14/druid-at-the-beginning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/14/druid-at-the-beginning/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/14/druid-at-the-beginning/" class="leancloud_visitors" data-flag-title="druid: 初遇">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <p>初识druid，是在为公司寻觅一款产品用于某个多维大数据分析的业务场景，以支撑存量千亿，日增亿级的多维关联查询。首先了解下druid这款开源产品。</p>
+<h2 id="druid是什么？"><a href="#druid是什么？" class="headerlink" title="druid是什么？"></a>druid是什么？</h2><p>druid可以看作是一个时间序列型的数据存储，用于多维度关联分析查询，可支撑千亿甚至万亿级的事件查询分析。<br><blockquote><p>Druid是一个开源的分析型数据存储， 用于支持事件数据之上的BI (OLAP)查询。 Druid提供低延时（实时）数据接入， 灵活的数据探索， 以及高速的数据聚合。现存的Druid 部署已经扩展至万亿级事件以及PB级数据。 Druid最常用于驱动面向用户的分析型应用。</p>
+</blockquote></p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>施主，吾观汝骨骼惊奇，天赋异禀，赏口饭吃呗！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechat_reward.png" alt="少坛子 WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/alipay_reward.jpeg" alt="少坛子 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/druid/" rel="tag">#druid</a>
+          
+            <a href="/tags/OLAP/" rel="tag">#OLAP</a>
+          
+            <a href="/tags/大数据/" rel="tag">#大数据</a>
+          
+        </div>
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/21/upgrade-sierra-ssh-problem/" itemprop="url">
-              
-                <span itemprop="name">Mac升级到Sierra（10.12）导致SSH私钥不可用</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/11/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-21T14:24:15+08:00"
-              content="2016-12-21" >
-          12-21
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/03/salesforce-issues/" rel="prev" title="salesforce-issues">
+                salesforce-issues <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/03/salesforce-issues/" itemprop="url">
-              
-                <span itemprop="name">salesforce-issues</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-03T15:17:51+08:00"
-              content="2016-11-03" >
-          11-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/14/druid-at-the-beginning/" itemprop="url">
-              
-                <span itemprop="name">druid: 初遇</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-14T15:06:27+08:00"
-              content="2016-10-14" >
-          10-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/11/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-11T15:04:29+08:00"
-              content="2016-10-11" >
-          10-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-
+    </div>
+  </div>
 
 
           </div>
@@ -463,6 +514,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/14/druid-at-the-beginning/"
+           data-title="druid: 初遇" data-url="https://wilcosheh.github.io/2016/10/14/druid-at-the-beginning/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -482,8 +541,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://tva3.sinaimg.cn/crop.130.0.195.195.180/70e0694cgw1f84sjafin9j2092064q37.jpg"
@@ -576,6 +644,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#druid是什么？"><span class="nav-number">1.</span> <span class="nav-text">druid是什么？</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -672,11 +751,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
 
 
   
