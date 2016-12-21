@@ -94,7 +94,7 @@ Mac升级到Sierra后SSH自动登录提示输入密码
 <meta property="og:description" content="problem最近将系统升级到Sierra之后，发现ssh的私钥不起作用，每次使用ssh都提示需要输入密码，Google一番，大都讨论到是dsa跟rsa的问题，并不能解决问题，而且不是现有密钥实在无法使用，并不想重新生成新的密钥，毕竟服务器等都是用的现在的公钥，重新配置还得走申请流程。
 Mac升级到Sierra后SSH自动登录提示输入密码
 升级至 macOS Sierra 会损坏你的 SSH 密钥">
-<meta property="og:updated_time" content="2016-12-21T07:06:09.000Z">
+<meta property="og:updated_time" content="2016-12-21T07:07:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac升级到Sierra（10.12）导致SSH私钥不可用">
 <meta name="twitter:description" content="problem最近将系统升级到Sierra之后，发现ssh的私钥不起作用，每次使用ssh都提示需要输入密码，Google一番，大都讨论到是dsa跟rsa的问题，并不能解决问题，而且不是现有密钥实在无法使用，并不想重新生成新的密钥，毕竟服务器等都是用的现在的公钥，重新配置还得走申请流程。
@@ -383,7 +383,7 @@ Mac升级到Sierra后SSH自动登录提示输入密码
 <p>再执行<code>ssh git@github.com</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ssh git@github.com</div><div class="line">Warning: Permanently added the RSA host key for IP address &apos;&apos; to the list of known hosts.</div><div class="line">PTY allocation request failed on channel 0</div><div class="line">Hi wilcosheh! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</div><div class="line">Connection to github.com closed.</div></pre></td></tr></table></figure>
 <p>Great, 就是这么性（简）感（单）！</p>
-<h2 id="ssh-add"><a href="#ssh-add" class="headerlink" title="ssh-add"></a><code>ssh-add</code></h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-add [-cDdLlXx] [-t life] [file ...] </div><div class="line">ssh-add -s pkcs11 </div><div class="line">ssh-add -e pkcs11</div></pre></td></tr></table></figure>
+<h2 id="ssh-add"><a href="#ssh-add" class="headerlink" title="ssh-add"></a>ssh-add</h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-add [-cDdLlXx] [-t life] [file ...] </div><div class="line">ssh-add -s pkcs11 </div><div class="line">ssh-add -e pkcs11</div></pre></td></tr></table></figure>
 <h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">-D：删除ssh-agent中的所有密钥.</div><div class="line">-d：从ssh-agent中的删除密钥 </div><div class="line">-e pkcs11：删除PKCS#11共享库pkcs1提供的钥匙。 </div><div class="line">-s pkcs11：添加PKCS#11共享库pkcs1提供的钥匙。 </div><div class="line">-L：显示ssh-agent中的公钥 </div><div class="line">-l：显示ssh-agent中的密钥 </div><div class="line">-t life：对加载的密钥设置超时时间，超时ssh-agent将自动卸载密钥 </div><div class="line">-X：对ssh-agent进行解锁 </div><div class="line">-x：对ssh-agent进行加锁</div></pre></td></tr></table></figure>
 
       
